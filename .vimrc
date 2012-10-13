@@ -79,5 +79,23 @@ Bundle 'gmarik/vundle'
 
 " Vim Bundles
 Bundle 'skalnik/vim-vroom'
+Bundle 'dbext.vim'
+Bundle 'git://github.com/scrooloose/nerdtree.git'
+Bundle 'git://github.com/mileszs/ack.vim.git'
+Bundle 'nerdtree-ack'
+Bundle 'git://github.com/wincent/Command-T.git'
+Bundle 'git://github.com/tpope/vim-surround.git'
+Bundle 'git://github.com/mattn/zencoding-vim.git'
+Bundle 'git://github.com/scrooloose/nerdcommenter.git'
+Bundle 'git://github.com/tpope/vim-rails.git'
+Bundle 'VimIM'
+Bundle 'git://github.com/hallison/vim-markdown.git'
+Bundle 'git://github.com/suan/vim-instant-markdown.git'
+Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
 
 filetype plugin indent on
+
+" ack ubuntu
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+" scss
+au BufRead,BufNewFile *.scss set filetype=scss
