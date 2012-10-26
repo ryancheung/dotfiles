@@ -37,7 +37,7 @@ set columns=100
 set ai
 set si
 set shiftwidth=2
-set tabstop=8
+set tabstop=4
 set softtabstop=2
 set expandtab
 set smarttab
