@@ -111,4 +111,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
 PATH=$PATH:$HOME/android-sdk-linux/tools
-ANDROID_SDK=$HOME/android-sdk-linux
+export ANDROID_SDK=$HOME/android-sdk-linux
