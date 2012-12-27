@@ -93,6 +93,7 @@ Bundle 'git://github.com/hallison/vim-markdown.git'
 Bundle 'git://github.com/suan/vim-instant-markdown.git'
 Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
 Bundle 'git://github.com/othree/html5.vim.git'
+Bundle 'git@github.com:ryancheung/adt.vim.git'
 
 filetype plugin indent on
 
