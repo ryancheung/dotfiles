@@ -1,9 +1,38 @@
 set nocompatible
 filetype off
+
+" Enable Vundle
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required!
+Bundle 'gmarik/vundle'
+
+" Vim Bundles
+Bundle 'dbext.vim'
+Bundle 'git://github.com/scrooloose/nerdtree.git'
+Bundle 'git://github.com/mileszs/ack.vim.git'
+Bundle 'nerdtree-ack'
+Bundle 'git://github.com/wincent/Command-T.git'
+Bundle 'git://github.com/tpope/vim-surround.git'
+Bundle 'git://github.com/mattn/zencoding-vim.git'
+Bundle 'git://github.com/scrooloose/nerdcommenter.git'
+Bundle 'git://github.com/tpope/vim-rails.git'
+Bundle 'VimIM'
+Bundle 'git://github.com/tpope/vim-markdown.git'
+Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
+Bundle 'git://github.com/othree/html5.vim.git'
+Bundle 'git://github.com/msanders/snipmate.vim.git'
+Bundle 'git://github.com/vim-scripts/javacomplete.git'
+Bundle 'git://github.com/godlygeek/tabular.git'
+Bundle 'git://github.com/kchmck/vim-coffee-script.git'
+Bundle 'git://github.com/othree/coffee-check.vim.git'
+
+filetype plugin indent on
 syntax on
 
 set gfn=Monaco\ 10
-"set background=light
 "colorscheme desert
 
 set bsdir=buffer
@@ -69,34 +98,9 @@ imap <M-o> <Esc>o
 " remove tailing space
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Enable Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
-
-" Vim Bundles
-Bundle 'skalnik/vim-vroom'
-Bundle 'dbext.vim'
-Bundle 'git://github.com/scrooloose/nerdtree.git'
-Bundle 'git://github.com/mileszs/ack.vim.git'
-Bundle 'nerdtree-ack'
-Bundle 'git://github.com/wincent/Command-T.git'
-Bundle 'git://github.com/tpope/vim-surround.git'
-Bundle 'git://github.com/mattn/zencoding-vim.git'
-Bundle 'git://github.com/scrooloose/nerdcommenter.git'
-Bundle 'git://github.com/tpope/vim-rails.git'
-Bundle 'VimIM'
-Bundle 'git://github.com/hallison/vim-markdown.git'
-Bundle 'git://github.com/suan/vim-instant-markdown.git'
-Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
-Bundle 'git://github.com/othree/html5.vim.git'
-
-filetype plugin indent on
-
 " ack ubuntu
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 " scss
 au BufRead,BufNewFile *.scss set filetype=scss
+
+set tags+=/home/ryan/.vim/tags
