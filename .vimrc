@@ -32,9 +32,6 @@ Bundle 'git://github.com/othree/coffee-check.vim.git'
 filetype plugin indent on
 syntax on
 
-set gfn=Monaco\ 10
-"colorscheme desert
-
 set bsdir=buffer
 set enc=utf-8
 set fenc=utf-8
