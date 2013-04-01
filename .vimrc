@@ -99,5 +99,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 " scss
 au BufRead,BufNewFile *.scss set filetype=scss
+au BufRead,BufNewFile [Cc]apfile set filetype=ruby
 
 set tags+=/home/ryan/.vim/tags
