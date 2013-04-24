@@ -95,8 +95,8 @@ imap <M-o> <Esc>o
 " remove tailing space
 autocmd BufWritePre * :%s/\s\+$//e
 
-" ack ubuntu
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+" ack arch
+let g:ackprg="/usr/bin/vendor_perl/ack -H --nocolor --nogroup --column"
 " scss
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile [Cc]apfile set filetype=ruby
