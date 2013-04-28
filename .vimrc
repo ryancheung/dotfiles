@@ -28,9 +28,15 @@ Bundle 'git://github.com/msanders/snipmate.vim.git'
 Bundle 'git://github.com/godlygeek/tabular.git'
 Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 Bundle 'git://github.com/othree/coffee-check.vim.git'
+Bundle 'git://github.com/mattn/gist-vim.git'
+Bundle 'git://github.com/mattn/webapi-vim.git'
+Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
 
 filetype plugin indent on
 syntax on
+
+set guifont=Monaco\ 11
+"colorscheme Github
 
 set bsdir=buffer
 set enc=utf-8
