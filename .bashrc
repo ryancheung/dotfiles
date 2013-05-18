@@ -118,5 +118,3 @@ PATH=$PATH:/home/ryan/apps/sublime2/
 
 # Android SDK
 PATH=$PATH:/opt/android-sdk/tools/
-export JDK_HOME="/usr/lib/jvm/java-7-openjdk/bin"
-export JAVA_HOME="/usr/lib/jvm/java-7-openjdk/bin"
