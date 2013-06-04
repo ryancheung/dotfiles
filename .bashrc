@@ -110,11 +110,14 @@ fi
 # Extra ENV
 export EDITOR=vim
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # Sublime Text 2
 PATH=$PATH:/home/ryan/apps/sublime2/
 
 # Android SDK
 PATH=$PATH:/opt/android-sdk/tools/
+
+
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+. ~/.rbenv/completions/rbenv.bash
