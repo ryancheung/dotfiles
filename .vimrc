@@ -52,7 +52,7 @@ set incsearch
 set nohlsearch
 
 set cf " Enable error files & error jumping.
-set clipboard+=unnamed " Yanks go on clipboard instead.
+set clipboard=unamed " Yanks go on clipboard instead.
 set history=256 " Number of things to remember in history.
 set ruler
 set nowrap
@@ -65,7 +65,7 @@ set cinwords=if,else,while,do,for,swith,case
 set formatoptions=tcqr
 
 " => Text, tab and indent related
-set columns=100
+"set columns=100
 set ai
 set si
 set shiftwidth=2
