@@ -31,6 +31,7 @@ Bundle 'git://github.com/othree/coffee-check.vim.git'
 Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/mattn/webapi-vim.git'
 Bundle "daylerees/colour-schemes", { "rtp": "vim-themes/" }
+Bundle "git://github.com/kana/vim-fakeclip.git"
 
 filetype plugin indent on
 syntax on
@@ -52,11 +53,11 @@ set incsearch
 set nohlsearch
 
 set cf " Enable error files & error jumping.
-set clipboard+=unnamed " Yanks go on clipboard instead.
+set clipboard=unnamed " Yanks go on clipboard instead.
 set history=256 " Number of things to remember in history.
 set ruler
 set nowrap
-set timeoutlen=500 " Time to wait after ESC (default causes an annoying delay
+set timeoutlen=800 " Time to wait after ESC (default causes an annoying delay
 
 " Formatting (some of these are for coding in C and C++
 set nocp
@@ -102,7 +103,7 @@ imap <M-o> <Esc>o
 autocmd BufWritePre * :%s/\s\+$//e
 
 " ack arch
-let g:ackprg="/usr/bin/vendor_perl/ack -H --nocolor --nogroup --column"
+let g:ackprg="/usr/local/bin/ack -H --nocolor --nogroup --column"
 " scss
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile [Cc]apfile set filetype=ruby
