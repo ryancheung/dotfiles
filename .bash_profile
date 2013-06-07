@@ -15,7 +15,7 @@ export PATH=$PATH:~/bin
 # rbenv
 PATH="$HOME/.rbenv/bin:$PATH"
 # Fix rbenv in tmux
-PATH="$HOME/.rbenv/shims/:$PATH"
+PATH="$HOME/.rbenv/shims:$PATH"
 eval "$(rbenv init -)"
 . ~/.rbenv/completions/rbenv.bash
 
