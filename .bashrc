@@ -88,17 +88,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Extra ENV
-export EDITOR=vim
-
-# Sublime Text 2
-PATH=$PATH:/home/ryan/apps/sublime2/
-
 # Android SDK
 PATH=$PATH:/opt/android-sdk/tools/
 
-
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-. ~/.rbenv/completions/rbenv.bash
+export EDITOR=vim
