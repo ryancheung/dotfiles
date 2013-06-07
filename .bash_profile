@@ -13,7 +13,9 @@ PS1='\[\e[0;33m\]\u\[\e[0m\]@\[\e[0;32m\]\h\[\e[0m\]:\[\e[0;34m\]\w\[\e[0m\]\$ '
 export PATH=$PATH:~/bin
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
+PATH="$HOME/.rbenv/bin:$PATH"
+# Fix rbenv in tmux
+PATH="$HOME/.rbenv/shims/:$PATH"
 eval "$(rbenv init -)"
 . ~/.rbenv/completions/rbenv.bash
 
