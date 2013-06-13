@@ -30,6 +30,7 @@ Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 Bundle 'git://github.com/othree/coffee-check.vim.git'
 Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/mattn/webapi-vim.git'
+Bundle 'git://github.com/kana/vim-fakeclip.git'
 
 filetype plugin indent on
 syntax on
