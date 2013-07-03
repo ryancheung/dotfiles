@@ -12,7 +12,7 @@ fi
 export CLICOLOR=1
 
 export TERM="xterm-color"
-export PS1="\u@\h:\w\$(__git_ps1 '(%s)') \$ "
+export PS1="\u@\h:\w\$(__git_ps1 '(%s)')\n$ "
 
 # rbenv
 PATH="$HOME/.rbenv/bin:$PATH"
