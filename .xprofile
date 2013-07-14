@@ -6,4 +6,5 @@ export XMODIFIERS=@im=ibus
 export QT_IM_MODULE=ibus
 
 # Customize keyboard mapping
-setxkbmap -option ctrl:swapcaps
+# CapsLock as a additional control
+setxkbmap -option ctrl:nocaps
