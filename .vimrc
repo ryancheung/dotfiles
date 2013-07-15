@@ -101,7 +101,7 @@ imap <M-o> <Esc>o
 autocmd BufWritePre * :%s/\s\+$//e
 
 " ack arch
-let g:ackprg="/usr/local/bin/ack -H --nocolor --nogroup --column"
+let g:ackprg="/usr/bin/vendor_perl/ack -H --nocolor --nogroup --column"
 " scss
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile [Cc]apfile set filetype=ruby
