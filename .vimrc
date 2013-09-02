@@ -30,6 +30,7 @@ Bundle 'git://github.com/kchmck/vim-coffee-script.git'
 Bundle 'git://github.com/othree/coffee-check.vim.git'
 Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/mattn/webapi-vim.git'
+Bundle 'tpope/vim-fugitive'
 
 filetype plugin indent on
 syntax on
@@ -101,7 +102,7 @@ imap <M-o> <Esc>o
 autocmd BufWritePre * :%s/\s\+$//e
 
 " ack arch
-let g:ackprg="/usr/bin/vendor_perl/ack -H --nocolor --nogroup --column"
+let g:ackprg="ack -H --nocolor --nogroup --column"
 " scss
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile [Cc]apfile set filetype=ruby
