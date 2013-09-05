@@ -31,6 +31,7 @@ Bundle 'git://github.com/othree/coffee-check.vim.git'
 Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/mattn/webapi-vim.git'
 Bundle 'tpope/vim-fugitive'
+Bundle 'slim-template/vim-slim'
 
 filetype plugin indent on
 syntax on
@@ -103,8 +104,10 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " ack arch
 let g:ackprg="ack -H --nocolor --nogroup --column"
-" scss
+
+" filetype detects
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile [Cc]apfile set filetype=ruby
+au BufRead,BufNewFile *.slim set filetype=slim
 
 set tags+=/home/ryan/.vim/tags
