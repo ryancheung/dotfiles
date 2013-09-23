@@ -25,6 +25,7 @@ fi
 # rbenv
 PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
+export PATH="$HOME/.rbenv/shims:$PATH"
 . ~/.rbenv/completions/rbenv.bash
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
