@@ -31,6 +31,7 @@ Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/mattn/webapi-vim.git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'slim-template/vim-slim'
+Bundle 'kana/vim-fakeclip'
 
 filetype plugin indent on
 syntax on
