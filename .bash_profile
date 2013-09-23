@@ -22,10 +22,13 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+# fix brew path
+PATH="/usr/local/bin:$PATH"
+
 # rbenv
 PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/shims:$PATH"
+PATH="$HOME/.rbenv/shims:$PATH"
 . ~/.rbenv/completions/rbenv.bash
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
