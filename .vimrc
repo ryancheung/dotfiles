@@ -19,7 +19,6 @@ Bundle 'git://github.com/tpope/vim-surround.git'
 Bundle 'git://github.com/mattn/zencoding-vim.git'
 Bundle 'git://github.com/scrooloose/nerdcommenter.git'
 Bundle 'git://github.com/tpope/vim-rails.git'
-Bundle 'VimIM'
 Bundle 'git://github.com/plasticboy/vim-markdown.git'
 Bundle 'git://github.com/suan/vim-instant-markdown.git'
 Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
@@ -95,9 +94,6 @@ set mat=5 "Bracket blinking.
 set novisualbell " No blinking .
 set laststatus=2 " Always show status line.
 imap <M-o> <Esc>o
-
-" vimim
-:let g:vimim_cloud = 'google'
 
 " remove tailing space
 autocmd BufWritePre * :%s/\s\+$//e
