@@ -36,7 +36,7 @@ Bundle 'kana/vim-fakeclip'
 filetype plugin indent on
 syntax on
 
-set guifont=Monaco\ 11
+"set guifont=Monaco\ 11
 "colorscheme Github
 
 set bsdir=buffer
@@ -99,8 +99,8 @@ imap <M-o> <Esc>o
 " remove tailing space
 autocmd BufWritePre * :%s/\s\+$//e
 
-" ack arch
-let g:ackprg="ack -H --nocolor --nogroup --column"
+" ack
+let g:ackprg="ack -a -H --nocolor --nogroup --column"
 
 " filetype detects
 au BufRead,BufNewFile *.scss set filetype=scss
