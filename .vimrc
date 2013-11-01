@@ -46,7 +46,7 @@ set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
 set number
 set hlsearch
 
-map <F8> :NERDTree<CR>
+map <leader>e :NERDTree<CR>
 let NERDTreeWinPos='right'
 
 set incsearch
