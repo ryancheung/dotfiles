@@ -31,4 +31,7 @@ eval "$(rbenv init -)"
 PATH="$HOME/.rbenv/shims:$PATH"
 . ~/.rbenv/completions/rbenv.bash
 
+# Android
+PATH="/Applications/Android Studio.app/sdk/platform-tools:$PATH"
+
 [[ -f ~/.bashrc ]] && . ~/.bashrc
