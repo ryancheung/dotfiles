@@ -32,6 +32,7 @@ Bundle 'git://github.com/mattn/webapi-vim.git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'slim-template/vim-slim'
 Bundle 'kana/vim-fakeclip'
+Bundle 'tfnico/vim-gradle'
 
 filetype plugin indent on
 syntax on
@@ -100,7 +101,7 @@ imap <M-o> <Esc>o
 autocmd BufWritePre * :%s/\s\+$//e
 
 " ack
-let g:ackprg="ack -a -H --nocolor --nogroup --column"
+let g:ackprg="ack -H --nocolor --nogroup --column"
 
 " filetype detects
 au BufRead,BufNewFile *.scss set filetype=scss
