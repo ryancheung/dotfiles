@@ -106,6 +106,7 @@ let g:ackprg="ack -H --nocolor --nogroup --column"
 " filetype detects
 au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile [Cc]apfile set filetype=ruby
+au BufRead,BufNewFile *.cap set filetype=ruby
 au BufRead,BufNewFile *.slim set filetype=slim
 
 set tags+=/home/ryan/.vim/tags
