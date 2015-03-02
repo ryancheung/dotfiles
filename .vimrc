@@ -2,12 +2,11 @@ set nocompatible
 filetype off
 
 " Enable Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-" let Vundle manage Vundle
-" required!
-Bundle 'gmarik/vundle'
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
 
 " Vim Bundles
 Bundle 'dbext.vim'
@@ -16,11 +15,10 @@ Bundle 'git://github.com/mileszs/ack.vim.git'
 Bundle 'nerdtree-ack'
 Bundle 'git://github.com/wincent/Command-T.git'
 Bundle 'git://github.com/tpope/vim-surround.git'
-Bundle 'git://github.com/mattn/zencoding-vim.git'
+Bundle 'git://github.com/mattn/emmet-vim.git'
 Bundle 'git://github.com/scrooloose/nerdcommenter.git'
 Bundle 'git://github.com/tpope/vim-rails.git'
 Bundle 'git://github.com/plasticboy/vim-markdown.git'
-Bundle 'git://github.com/suan/vim-instant-markdown.git'
 Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
 Bundle 'git://github.com/othree/html5.vim.git'
 Bundle 'git://github.com/msanders/snipmate.vim.git'
@@ -34,6 +32,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'kana/vim-fakeclip'
 Bundle 'tfnico/vim-gradle'
 
+call vundle#end()
 filetype plugin indent on
 syntax on
 
