@@ -80,3 +80,5 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+{ eval "$(boot2docker shellinit)"; } > /dev/null 2>&1

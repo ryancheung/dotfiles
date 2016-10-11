@@ -29,8 +29,11 @@ Bundle 'git://github.com/mattn/gist-vim.git'
 Bundle 'git://github.com/mattn/webapi-vim.git'
 Bundle 'tpope/vim-fugitive'
 Bundle 'slim-template/vim-slim'
-Bundle 'kana/vim-fakeclip'
 Bundle 'tfnico/vim-gradle'
+Bundle 'vim-scripts/vim-misc'
+Bundle 'vim-scripts/lua.vim'
+Bundle 'groenewege/vim-less'
+Bundle 'vim-scripts/visSum.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -53,7 +56,6 @@ set incsearch
 set nohlsearch
 
 set cf " Enable error files & error jumping.
-set clipboard=unnamed " Yanks go on clipboard instead.
 set history=256 " Number of things to remember in history.
 set ruler
 set nowrap
@@ -80,6 +82,8 @@ set cindent
 set nobackup
 set nowb
 set noswapfile
+
+set clipboard=unnamed
 
 "autocmd FileType related
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -108,4 +112,15 @@ au BufRead,BufNewFile [Cc]apfile set filetype=ruby
 au BufRead,BufNewFile *.cap set filetype=ruby
 au BufRead,BufNewFile *.slim set filetype=slim
 
+autocmd FileType go,cpp,lua set shiftwidth=4
+autocmd FileType go,cpp,lua set softtabstop=4
+
+let g:S = 0  "result in global variable S
+function! Sum(number)
+  let g:S = g:S + a:number
+  return a:number
+endfunction
+
 set tags+=/home/ryan/.vim/tags
+
+set shell=/usr/local/bin/bash\ -O\ globstar
