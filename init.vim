@@ -1,46 +1,54 @@
 set nocompatible
 filetype off
 
+if has('nvim')
+    let s:editor_root=expand("~/.config/nvim")
+else
+    let s:editor_root=expand("~/.vim")
+endif
+
 " Enable Vundle
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/.config/nvim/bundle/Vundle.vim
+call vundle#begin(s:editor_root . '/bundle')
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-" Vim Bundles
-Bundle 'dbext.vim'
-Bundle 'git://github.com/scrooloose/nerdtree.git'
-Bundle 'git://github.com/mileszs/ack.vim.git'
-Bundle 'nerdtree-ack'
-Bundle 'git://github.com/wincent/Command-T.git'
-Bundle 'git://github.com/tpope/vim-surround.git'
-Bundle 'git://github.com/mattn/emmet-vim.git'
-Bundle 'git://github.com/scrooloose/nerdcommenter.git'
-Bundle 'git://github.com/tpope/vim-rails.git'
-Bundle 'git://github.com/plasticboy/vim-markdown.git'
-Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
-Bundle 'git://github.com/othree/html5.vim.git'
-Bundle 'git://github.com/msanders/snipmate.vim.git'
-Bundle 'git://github.com/godlygeek/tabular.git'
-Bundle 'git://github.com/kchmck/vim-coffee-script.git'
-Bundle 'git://github.com/othree/coffee-check.vim.git'
-Bundle 'git://github.com/mattn/gist-vim.git'
-Bundle 'git://github.com/mattn/webapi-vim.git'
-Bundle 'tpope/vim-fugitive'
-Bundle 'slim-template/vim-slim'
-Bundle 'tfnico/vim-gradle'
-Bundle 'vim-scripts/vim-misc'
-Bundle 'vim-scripts/lua.vim'
-Bundle 'groenewege/vim-less'
-Bundle 'vim-scripts/visSum.vim'
+" Vim Plugins
+Plugin 'dbext.vim'
+Plugin 'git://github.com/scrooloose/nerdtree.git'
+Plugin 'git://github.com/mileszs/ack.vim.git'
+Plugin 'nerdtree-ack'
+Plugin 'git://github.com/tpope/vim-surround.git'
+Plugin 'git://github.com/mattn/emmet-vim.git'
+Plugin 'git://github.com/scrooloose/nerdcommenter.git'
+Plugin 'git://github.com/tpope/vim-rails.git'
+Plugin 'git://github.com/plasticboy/vim-markdown.git'
+Plugin 'git://github.com/cakebaker/scss-syntax.vim.git'
+Plugin 'git://github.com/othree/html5.vim.git'
+Plugin 'git://github.com/msanders/snipmate.vim.git'
+Plugin 'git://github.com/godlygeek/tabular.git'
+Plugin 'git://github.com/kchmck/vim-coffee-script.git'
+Plugin 'git://github.com/othree/coffee-check.vim.git'
+Plugin 'git://github.com/mattn/gist-vim.git'
+Plugin 'git://github.com/mattn/webapi-vim.git'
+Plugin 'git://github.com/wincent/command-t.git'
+Plugin 'tpope/vim-fugitive'
+Plugin 'slim-template/vim-slim'
+Plugin 'tfnico/vim-gradle'
+Plugin 'vim-scripts/vim-misc'
+Plugin 'vim-scripts/lua.vim'
+Plugin 'groenewege/vim-less'
+Plugin 'vim-scripts/visSum.vim'
+Plugin 'google/vim-ft-bzl'
+Plugin 'octol/vim-cpp-enhanced-highlight'
 
 call vundle#end()
 filetype plugin indent on
 syntax on
 
 "set guifont=Monaco\ 11
-"colorscheme Github
+colorscheme peachpuff
 
 set bsdir=buffer
 set enc=utf-8
@@ -112,8 +120,11 @@ au BufRead,BufNewFile [Cc]apfile set filetype=ruby
 au BufRead,BufNewFile *.cap set filetype=ruby
 au BufRead,BufNewFile *.slim set filetype=slim
 
-autocmd FileType go,cpp,lua set shiftwidth=4
-autocmd FileType go,cpp,lua set softtabstop=4
+autocmd FileType go,cpp,lua,eruby set shiftwidth=4
+autocmd FileType go,cpp,lua,eruby set softtabstop=4
+
+autocmd FileType ruby set shiftwidth=2
+autocmd FileType ruby set softtabstop=2
 
 let g:S = 0  "result in global variable S
 function! Sum(number)
@@ -121,6 +132,10 @@ function! Sum(number)
   return a:number
 endfunction
 
-set tags+=/home/ryan/.vim/tags
+set tags+=~/.config/nvim/tags
 
 set shell=/usr/local/bin/bash\ -O\ globstar
+
+let g:cpp_class_decl_highlight = 0
+let g:cpp_member_variable_highlight = 1
+let g:cpp_class_scope_highlight = 1
