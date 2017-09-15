@@ -68,3 +68,6 @@ export ANDROID_SDK_ROOT=/Applications/adt-bundle-mac-x86_64-20140702/sdk
 export PATH=$ANDROID_SDK_ROOT:$PATH
 export PATH=$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools:$PATH
 export PATH="/usr/local/sbin:$PATH"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
