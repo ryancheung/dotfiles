@@ -139,3 +139,6 @@ set shell=/usr/local/bin/bash\ -O\ globstar
 let g:cpp_class_decl_highlight = 0
 let g:cpp_member_variable_highlight = 1
 let g:cpp_class_scope_highlight = 1
+
+" Keypress to show abosolute path of file
+map <leader>f :echo expand('%:p')<CR>
