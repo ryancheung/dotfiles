@@ -33,6 +33,7 @@ Plugin 'git://github.com/othree/coffee-check.vim.git'
 Plugin 'git://github.com/mattn/gist-vim.git'
 Plugin 'git://github.com/mattn/webapi-vim.git'
 Plugin 'git://github.com/wincent/command-t.git'
+Plugin 'git://github.com/tpope/vim-rbenv.git'
 Plugin 'tpope/vim-fugitive'
 Plugin 'slim-template/vim-slim'
 Plugin 'tfnico/vim-gradle'
@@ -42,6 +43,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'vim-scripts/visSum.vim'
 Plugin 'google/vim-ft-bzl'
 Plugin 'octol/vim-cpp-enhanced-highlight'
+Plugin 'kmyk/sdl2.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -91,6 +93,9 @@ set nobackup
 set nowb
 set noswapfile
 
+set autoread
+au CursorHold * checktime
+
 set clipboard=unnamed
 
 "autocmd FileType related
@@ -120,8 +125,8 @@ au BufRead,BufNewFile [Cc]apfile set filetype=ruby
 au BufRead,BufNewFile *.cap set filetype=ruby
 au BufRead,BufNewFile *.slim set filetype=slim
 
-autocmd FileType go,cpp,lua,eruby set shiftwidth=4
-autocmd FileType go,cpp,lua,eruby set softtabstop=4
+autocmd FileType go,cpp,lua,cs,javascript,eruby,html set shiftwidth=4
+autocmd FileType go,cpp,lua,cs,javascript,eruby,html set softtabstop=4
 
 autocmd FileType ruby set shiftwidth=2
 autocmd FileType ruby set softtabstop=2
