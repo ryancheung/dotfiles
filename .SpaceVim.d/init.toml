@@ -25,6 +25,7 @@
     statusline_display_mode = false
     default_indent = 4
     relativenumber = false
+    bootstrap_before = "myconfig#before"
 
 # Enable autocomplete layer
 [[layers]]
