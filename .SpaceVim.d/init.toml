@@ -12,6 +12,7 @@
     # if you want to use more colorscheme, please load the colorscheme
     # layer
     colorscheme = "gruvbox"
+    colorscheme_bg = "dark"
     background = "dark"
     # Disable guicolors in basic mode, many terminal do not support 24bit
     # true colors
@@ -60,7 +61,7 @@ name = 'lang#lua'
 name = 'lang#markdown'
 
 [[layers]]
-name = 'lang#ruby'
+name = 'ctrlp'
 
 [[layers]]
-name = 'lang#ctrlp'
+name = "lang#dart"
