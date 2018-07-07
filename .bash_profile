@@ -52,5 +52,10 @@ export PATH="~/vcpkg:$PATH"
 #export export CC=`which clang`
 #export export CXX=`which clang++`
 
-export http_proxy="http://127.0.0.1:1087"
-export https_proxy="http://127.0.0.1:1087"
+# flutter
+export PUB_HOSTED_URL=https://pub.flutter-io.cn
+export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
+export PATH="~/flutter_src/bin:$PATH"
+
+#export http_proxy="http://127.0.0.1:1087"
+#export https_proxy="http://127.0.0.1:1087"
