@@ -10,4 +10,11 @@ func! myconfig#before() abort
     autocmd FileType css,javascript,eruby,html set softtabstop=4
     autocmd BufEnter * set mouse=
     set clipboard=unnamedplus
+    set shell=/usr/local/bin/bash
+
+    let g:clamp_libclang_file = '/Library/Developer/CommandLineTools/usr/lib/libclang.dylib'
+
+    let g:deoplete#enable_at_startup = 1
+
+    let g:spacevim_custom_plugins = [['ryancheung/ryansgruvbox']]
 endf
