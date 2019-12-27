@@ -22,7 +22,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
 fi
 
 # fix PATH in tmux for homebrew
-PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/bin:$PATH"
+export PATH="/usr/local/sbin:$PATH"
 
 # rbenv
 PATH="$HOME/.rbenv/bin:$PATH"
@@ -30,32 +31,15 @@ eval "$(rbenv init -)"
 PATH="$HOME/.rbenv/shims:$PATH"
 . ~/.rbenv/completions/rbenv.bash
 
-export GOPATH=$HOME/go-app
-export GOBIN=$HOME/go-app/bin
-
-PATH="$GOBIN:$PATH"
-
 [[ -f ~/.bashrc ]] && . ~/.bashrc
-shopt -s globstar
+#shopt -s globstar
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-# use homebrew curl
-export PATH="/usr/local/Cellar/curl/7.54.0/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
-# vcpkg
-export PATH="~/vcpkg:$PATH"
-
-#export PATH="/usr/local/sbin:$PATH"
-#export PATH="/usr/local/opt/llvm/bin:$PATH"
 #export export CC=`which clang`
 #export export CXX=`which clang++`
-
-# flutter
-export PUB_HOSTED_URL=https://pub.flutter-io.cn
-export FLUTTER_STORAGE_BASE_URL=https://storage.flutter-io.cn
-export PATH="~/flutter_src/bin:$PATH"
-
 #export http_proxy="http://127.0.0.1:1087"
 #export https_proxy="http://127.0.0.1:1087"
